@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+  <!-- current weather section -->
+  <div class="current-weather-container">
+    <h1 class="location">London, UK</h1>
+    <p class="current-time">Today, Oct 18 5:10</p>
+    <h1 class="current-temperature">16<sup class="degCelsius">°C</sup></h1>
+     <div class="next-weather">
+        <span>17°</span>
+        <span>10°</span>
+     </div>
+<!-- more details about weather  -->
+     <div class="current-weather">
+        <div class="weather precipitation">
+          <p>23:00</p>
+          <small>Slight chance of rain</small>
+        </div>
+        <div class="weather wind">
+          <p>14 km/h</p>
+          <small>Gentle breeze now</small>
+        </div>
+        <div class="weather radiation">
+          <p>UVI2</p>
+          <small class="except">Low sunburn risk today</small>
+        </div>
+     </div>
+  </div>
+
+<!-- forecast weather section -->
+  <div class="forecast-weather-container">
+    <p class="forecast-title">Hourly Forecast</p>
+    <div class="hourly-forecast">
+      <div class="forecast items">
+        <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
+        <small class="forcast-time">05:00 AM</small>
+        <h2>23°</h2>
+      </div>
+
+      <div class="forecast items">
+        <img class="weather-icon" src="images/sun.png" alt="weather-icon">
+        <small class="forcast-time">06:00 AM</small>
+        <h2>20°</h2>
+      </div>
+
+      <div class="forecast items">
+        <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
+        <small class="forcast-time">07:00 AM</small>
+        <h2>17°</h2>
+      </div>
+
+      <div class="forecast items">
+        <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
+        <small class="forcast-time">08:00 AM</small>
+        <h2>16°</h2>
+      </div>
+      
+    </div>
+
+<!-- next day forecast -->
+    <div class="next-day-forecast">
+      <p class="next-day">Tomorrow</p>
+
+      <div class="tomorrow-weather-container">
+        <img class="weather-icon" src="/images/sun.png" alt="">
+        <div>
+          <p>Tomorrow</p>
+          <small>Light Rain Showers</small>
+        </div>
+        <div>
+          <small>17°</small>
+          <small>10°</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
