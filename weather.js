@@ -8,6 +8,8 @@ const visElem = document.querySelector('.js-visibility');
 const button = document.getElementById('button');
 const currentWeatherContainerElem = document.querySelector('.current-weather-container');
 const tomorrowWeatherElem = document.querySelector('.js-tomorrow-weather');
+const bodyElem = document.getElementById('body');
+console.log(bodyElem);
 
 const forecastContainer = document.querySelector('.js-daily-forecast');
 
@@ -97,9 +99,11 @@ function checkDayandNightTime(data) {
       elem.add('daytime-background');
       elem.remove('nightTime-background')
     }
+
   } else {
-    elem.remove('daytime-background')
-    elem.add('nightTime-background')
+    elem.remove('daytime-background');
+    elem.add('nightTime-background');
+    bodyElem.style.backgroundColor = 'black';
   } 
 }
 
