@@ -10,57 +10,60 @@
 
   <!-- current weather section -->
   <div class="current-weather-container">
-    <h1 class="location">London, UK</h1>
-    <p class="current-time">Today, Oct 18 5:10</p>
-    <h1 class="current-temperature">16<sup class="degCelsius">°C</sup></h1>
-     <div class="next-weather">
-        <span>17°</span>
-        <span>10°</span>
+    <h1 class="location js-location">London, UK</h1>
+    <p class="current-time js-current-time">Today, Oct 18 5:10</p>
+    <h1 class="current-temperature js-current-temperature">16<sup class="degCelsius">°C</sup></h1>
+     <div class="dew-point">
+        <span>dewpoint: 17°C</span>
+        
      </div>
 <!-- more details about weather  -->
      <div class="current-weather">
-        <div class="weather precipitation">
-          <p>23:00</p>
+        <div class="weather precipitation js-precipitation">
+          <img src="" alt="">
           <small>Slight chance of rain</small>
         </div>
-        <div class="weather wind">
+        <div class="weather wind js-wind">
           <p>14 km/h</p>
           <small>Gentle breeze now</small>
         </div>
-        <div class="weather radiation">
-          <p>UVI2</p>
-          <small class="except">Low sunburn risk today</small>
+        <div class="weather visibility js-visibility">
+          <p>VIS</p>
+          <small class="except">visibility</small>
         </div>
      </div>
+
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 50"><path fill="rgb(240, 239, 239)" fill-opacity="1" d="M 2 45 Q 39 1 159 33 Q 210 45 296 47 Q 369 43 409 24 Q 475 11 506 49  Z"></path></svg>
   </div>
 
 <!-- forecast weather section -->
   <div class="forecast-weather-container">
-    <p class="forecast-title">Hourly Forecast</p>
-    <div class="hourly-forecast">
-      <div class="forecast items">
+    
+    <p class="forecast-title">Forecast Average</p>
+    <div class="daily-forecast js-daily-forecast">
+      <!-- <div class="forecast items">
         <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
         <small class="forcast-time">05:00 AM</small>
-        <h2>23°</h2>
-      </div>
+        <h2>23°C</h2>
+      </div> -->
 
-      <div class="forecast items">
+      <!-- <div class="forecast items">
         <img class="weather-icon" src="images/sun.png" alt="weather-icon">
         <small class="forcast-time">06:00 AM</small>
-        <h2>20°</h2>
-      </div>
+        <h2>20°C</h2>
+      </div> -->
 
-      <div class="forecast items">
+      <!-- <div class="forecast items">
         <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
         <small class="forcast-time">07:00 AM</small>
-        <h2>17°</h2>
-      </div>
+        <h2>17°C</h2>
+      </div> -->
 
-      <div class="forecast items">
+      <!-- <div class="forecast items">
         <img class="weather-icon" src="/images/sun.png" alt="weather-icon">
         <small class="forcast-time">08:00 AM</small>
-        <h2>16°</h2>
-      </div>
+        <h2>16°C</h2>
+      </div> -->
       
     </div>
 
@@ -68,20 +71,27 @@
     <div class="next-day-forecast">
       <p class="next-day">Tomorrow</p>
 
-      <div class="tomorrow-weather-container">
+      <div class="tomorrow-weather-container js-tomorrow-weather">
         <img class="weather-icon" src="/images/sun.png" alt="">
         <div>
           <p>Tomorrow</p>
-          <small>Light Rain Showers</small>
+          <small class="weather-text">Light Rain Showers</small>
         </div>
-        <div>
-          <small>17°</small>
-          <small>10°</small>
+        <div class="minmax-temp">
+          <!-- <small>17°</small>
+          <small>10°</small> -->
         </div>
       </div>
 
     </div>
+<!-- to change weather report location -->
 
+    <form class="form" action="">
+      <input id="input" type="text" placeholder="Search...">
+      <button id="button" type="submit">change Location</button>
+    </form>
   </div>
+
+  <script src="weather.js"></script>
 </body>
 </html>
