@@ -42,7 +42,7 @@ function getPosition() {
         resolve(position)
       }, (error) => {
         console.log(error.message);
-        alert(`${error.message}: Please enable your Device Location to get the precise weather for your location `)
+        alert(`${error.message}: Allow location access for optimum performance`)
         reject(error)
       });
   })
