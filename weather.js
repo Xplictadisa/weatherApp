@@ -149,8 +149,8 @@ function forecastWeather(data) {
 
     tomorrowWeatherElem.querySelector('img').src = forecast[1].day.condition.icon;
 
-    tomorrowWeatherElem.querySelector('.minmax-temp').innerHTML = `<small>${forecast[1].day.maxtemp_c}°</small>
-          <small>${forecast[1].day.mintemp_c}°</small>`
+    tomorrowWeatherElem.querySelector('.minmax-temp').innerHTML = `<small><img class="mySvgArrows" src="images/arrow_upward.svg">${forecast[1].day.maxtemp_c}°</small>
+          <small><img class="mySvgArrows" src="images/arrow_downward.svg">${forecast[1].day.mintemp_c}°</small>`
   })
 }
 

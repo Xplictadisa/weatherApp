@@ -137,8 +137,8 @@ body {
 }
 
 .forecast-title {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 500;
   margin-top: 20px
 }
 
@@ -184,8 +184,22 @@ body {
   padding: 20px;
   border-radius: 25px;
   margin-top: 20px;
-  box-shadow: 2px 2px 3px rgb(172, 168, 163);
+  box-shadow: 2px 2px 6px rgb(172, 168, 163);
   margin-bottom: 0;
+}
+
+.minmax-temp {
+  display: flex;
+  gap: 5px;
+}
+
+.mySvgArrows {
+  width: 18px;
+}
+
+.minmax-temp small {
+  display: flex;
+  align-items: center;
 }
 
 /* change location */
@@ -202,7 +216,7 @@ body {
   height: 20px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(171, 171, 171);
+  background-color: white;
   box-shadow: 0 0 3px 0 rgb(129, 128, 128);
   font-size: 16px;
 }
@@ -212,9 +226,9 @@ body {
   font-size: 16px;
   border-radius: 5px;
   border: none;
-  background: rgb(88, 88, 88, 0.8);
+  background: rgba(189, 182, 182, 0.8);
   box-shadow: 0 0 3px 0 rgb(129, 128, 128);
-  color: antiquewhite;
+  color: black;
   cursor: pointer;
 }
 
