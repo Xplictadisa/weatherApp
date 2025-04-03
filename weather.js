@@ -7,7 +7,6 @@ const windElem = document.querySelector('.js-wind');
 const visElem = document.querySelector('.js-visibility');
 const button = document.getElementById('button');
 const currentWeatherContainerElem = document.querySelector('.current-weather-container');
-console.log(currentWeatherContainerElem)
 const tomorrowWeatherElem = document.querySelector('.js-tomorrow-weather');
 
 const forecastContainer = document.querySelector('.js-daily-forecast');
@@ -93,7 +92,6 @@ function formatEachForecastDate(param) {
 
 function checkDayandNightTime(data) {
   const elem = currentWeatherContainerElem.classList;
-  console.log("debugging 1", elem)
   if (data.current.is_day === 0 ) {
     if (elem.contains('daytime-background') === false) {
       elem.add('daytime-background');
