@@ -204,6 +204,7 @@ body {
   border: none;
   background-color: transparent;
   box-shadow: 0 0 3px 0 rgb(129, 128, 128);
+  font-size: 16px;
 }
 
 .form button {
