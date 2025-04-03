@@ -92,7 +92,7 @@ function formatEachForecastDate(param) {
 
 function checkDayandNightTime(data) {
   const elem = currentWeatherContainerElem.classList;
-  if (data.current.is_day === 0 ) {
+  if (data.current.is_day === 1 ) {
     if (elem.contains('daytime-background') === false) {
       elem.add('daytime-background');
       elem.remove('nightTime-background')
@@ -155,8 +155,8 @@ async function renderCurrentLocationWeather() {
   console.log(userLocation);
   const data = await getWeather(userLocation);
   console.log(data);
-
+  
+  checkDayandNightTime(data)
   currentWeather(data);
   forecastWeather(data)
-  checkDayandNightTime(data)
 }
