@@ -12,14 +12,7 @@ const tomorrowWeatherElem = document.querySelector('.js-tomorrow-weather');
 
 const forecastContainer = document.querySelector('.js-daily-forecast');
 
-
-// console.log(locationElem);
-// console.log(timeElem);
-// console.log(tempElem)
-// console.log(dewpointElem)
-// console.log(precipElem)
-// console.log(windElem)
-// console.log(radiationElem)
+renderCurrentLocationWeather();
 
 button.addEventListener('click', async function(e) {
   try {
@@ -169,14 +162,5 @@ async function renderCurrentLocationWeather() {
   checkDayandNightTime(data)
 }
 
-renderCurrentLocationWeather()
 
-// showPosition()
-//  .then((userLocation) => {
-//   console.log(userLocation);
-//   getWeather(userLocation)
-
-//  }).catch((error) => {
-//   console.log(`showPosition error: ${error}`)
-//  });
 
