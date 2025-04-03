@@ -14,7 +14,7 @@ body {
 }
 .current-weather-container {
   /* margin-bottom: 30px; */
-  background-image: url(/images/darkcloud.png);
+  background-image: url(images/darkcloud.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,11 +24,11 @@ body {
 }
 
 .daytime-background {
-  background-image: url(/images/darkcloud.png);
+  background-image: url(images/darkcloud.png);
 }
 
 .nightTime-background {
-  background-image: url(/images/night.png);
+  background-image: url(images/night.png);
 }
 
 .location {

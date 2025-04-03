@@ -93,7 +93,8 @@ function formatEachForecastDate(param) {
 
 function checkDayandNightTime(data) {
   const elem = currentWeatherContainerElem.classList;
-  if (data.current.is_day === 1 ) {
+  console.log("debugging 1", elem)
+  if (data.current.is_day === 0 ) {
     if (elem.contains('daytime-background') === false) {
       elem.add('daytime-background');
       elem.remove('nightTime-background')
