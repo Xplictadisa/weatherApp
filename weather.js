@@ -59,7 +59,7 @@ async function showPosition() {
 async function getWeather(position) {
   try {
     const apiKey = '58a91199fc7144af9da130254252803';
-    const url = `http://api.weatherapi.com/v1//forecast.json.json?key=${apiKey}&q=${position}&days=5`;
+    const url = `https://api.weatherapi.com/v1//forecast.json.json?key=${apiKey}&q=${position}&days=5`;
 
     const response = await fetch(url);
     // console.log(response)
@@ -128,7 +128,7 @@ function forecastWeather(data) {
   let forecastHTML = '';
   const forecast = data.forecast.forecastday;
   forecast.forEach((items) => {
-    console.log(items);
+    // console.log(items);
     if (forecast[0].date !== items.date) {
       // console.log(items.date)
       forecastHTML += `
@@ -161,6 +161,3 @@ async function renderCurrentLocationWeather() {
   forecastWeather(data)
   checkDayandNightTime(data)
 }
-
-
-
