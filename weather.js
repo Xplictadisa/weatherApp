@@ -103,7 +103,6 @@ function checkDayandNightTime(data) {
   } else {
     elem.remove('daytime-background');
     elem.add('nightTime-background');
-    bodyElem.style.backgroundColor = 'black';
   } 
 }
 
